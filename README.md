@@ -6,7 +6,7 @@
 
 1. Скачать `git clone https://github.com/theurs/sendmail_to_telegram.git`
 2. `cd sendmail_to_telegram`
-3. Сделать симлинк (возможно перед этим придется удалить уже имеющийся sendmail) `sudo ls -s sendmail.py /usr/bin/sendmail`
+3. Сделать симлинк (возможно перед этим придется удалить уже имеющийся sendmail) `sudo ln -s "$PWD/sendmail.py" "/usr/bin/sendmail"`
 4. `sudo chmod +x /usr/bin/sendmail`
 5. Установить зависимости `sudo pip install pyTelegramBotAPI --system`
 6. Отредактировать файл `sendmail.py` подставив там свой токен бота и id пользователя которому бот будет посылать сообщения
